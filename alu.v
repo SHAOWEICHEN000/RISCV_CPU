@@ -16,7 +16,7 @@ module alu(
   input [31:0]read_data1,
   input [31:0]read_data2,
   input [31:0]imm32,
-  input [31:0]pc,
+  input [15:0]pc,
   output reg[31:0] ALU_result,
   output branch
 );

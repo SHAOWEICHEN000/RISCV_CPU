@@ -1,7 +1,7 @@
 `ifndef DECODE_V
 `define DECODE_V
 module decode(
-input [31:0]pc,
+input [15:0]pc,
 input [31:0] instruction,
 //R-type
 output reg[6:0]opcode,
@@ -28,7 +28,7 @@ input branch,
   output reg [1:0] op_A_sel,
   output reg [1:0]op_B_sel,
   output reg [5:0] ALU_Control,
-
+input clk,
   // Outputs to Memory
   output reg mem_wEn,
 
@@ -45,8 +45,8 @@ input branch,
                    JAL     = 7'b1101111,
                    AUIPC   = 7'b0010111,
                    LUI     = 7'b0110111;
-    always @(*) begin
-    //  DEFAULT（PREVENT latch）
+    always @(posedge clk) begin
+ 
         opcode  <= 7'b0;
         rd      <= 5'b0;
         funct3  <= 3'b0;

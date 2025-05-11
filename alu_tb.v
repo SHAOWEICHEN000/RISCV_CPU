@@ -12,7 +12,7 @@ module alu_tb;
   reg [19:0] imm_u;
   reg [31:0] read_data1, read_data2;
   reg [31:0] imm32;
-  reg [31:0] pc;
+  reg [15:0] pc;
   wire [31:0] ALU_result;
   wire branch;
 
