@@ -16,6 +16,7 @@ module alu(
   input [31:0]read_data1,
   input [31:0]read_data2,
   input [31:0]imm32,
+  input [31:0]pc,
   output reg[31:0] ALU_result,
   output branch
 );
@@ -30,7 +31,7 @@ module alu(
                    LUI     = 7'b0110111;
                   wire signed [31:0] s_op_a;
 		  wire signed [31:0] s_op_b;
-
+		  reg branch_flag;
 		  assign s_op_a = read_data1;
 		  assign s_op_b = read_data2;
 
@@ -142,10 +143,10 @@ always @(*)begin
 	    end else begin
 	        branch_flag = 0;
 	end
-	end	
+		
 	//---------------------------------JALR--------------------------------------
 	if (opcode == JALR) begin
-       		 ALU_result = (read_data1 + imm32) & ~32'b1;
+       		 ALU_result = (read_data1 + imm32) & ~32'h1;
        	end
        	//---------------------------------JAL---------------------------------------
        	if (opcode == JAL) begin

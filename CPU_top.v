@@ -130,7 +130,8 @@ alu alu1(
 data_memory data_memory(
 .clk(clk),
 .mem_wEn(mem_wEn),
-.address(ALU_result),
+.rst(rst),
+.address(pc),
 .write_data(write_data),
 .read_data(read_data)
 );

@@ -1,7 +1,8 @@
-6`ifndef IMM_GEN_V
+`ifndef IMM_GEN_V
 `define IMM_GEN_V
 
 module imm_gen(
+  input clk,
   input  [31:0] instruction,
   output reg [31:0] imm32
 );
