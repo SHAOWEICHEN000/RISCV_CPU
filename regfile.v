@@ -10,6 +10,7 @@ input [4:0] rs2,
 input [4:0] rd,
 output [31:0] read_data1,
 output [31:0] read_data2
+
 );
  reg [31:0]x[0:31];
  assign read_data1 = x[rs1];
@@ -24,9 +25,9 @@ integer i;
     end
   end else if (wEn && rd != 5'd0) begin
    x[rd] <= write_data;
-    $display("x[%0d] = %h", rd, x[rd]);
+    
   end
-
+$display("result= %h", x[12]);
 
  end
 endmodule

@@ -1,0 +1,1315 @@
+ERROR: ./instruction_memory.v:16: $readmemh(program.hex): Invalid input character: #
+=== FETCH ===
+PC = xxxx, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=xxxxxxx, rs1= x, rs2= x, rd= x
+funct3=xxx, funct7=xxxxxxx
+imm32 = xxxxxxxx
+=== ALU ===
+ALU_result = xxxxxxxx, branch = 0
+=== WRITEBACK ===
+WriteData = xxxxxxxx, ToReg =  x, wb_sel = x
+=== DATA MEMORY ===
+Data Memory Address = xxxx, Data Memory Write Data = xxxxxxxx, Data Memory Read Data = xxxxxxxx
+result= xxxxxxxx
+result= 00000000
+=== FETCH ===
+PC = 0000, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = xxxxxxxx
+=== ALU ===
+ALU_result = xxxxxxxx, branch = 0
+=== WRITEBACK ===
+WriteData = xxxxxxxx, ToReg =  0, wb_sel = x
+=== DATA MEMORY ===
+Data Memory Address = xxxx, Data Memory Write Data = xxxxxxxx, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0004, Instruction = 00a00513
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 0000000a
+=== ALU ===
+ALU_result = xxxxxxxx, branch = 0
+=== WRITEBACK ===
+WriteData = xxxxxxxx, ToReg =  0, wb_sel = x
+=== DATA MEMORY ===
+Data Memory Address = xxxx, Data Memory Write Data = 0000000X, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0008, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0010011, rs1= 0, rs2= 0, rd=10
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = xxxxxxxx, branch = 0
+=== WRITEBACK ===
+WriteData = xxxxxxxx, ToReg = 10, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = xxxx, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 000c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0010, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0014, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0018, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 001c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0020, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0024, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0028, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 002c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0030, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0034, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0038, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 003c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0040, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0044, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0048, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 004c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0050, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0054, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0058, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 005c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0060, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0064, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0068, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 006c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0070, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0074, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0078, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 007c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0080, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0084, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0088, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 008c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0090, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0094, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0098, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 009c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 00a0, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 00a4, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 00a8, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 00ac, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 00b0, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 00b4, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 00b8, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 00bc, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 00c0, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 00c4, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 00c8, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 00cc, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 00d0, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 00d4, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 00d8, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 00dc, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 00e0, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 00e4, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 00e8, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 00ec, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 00f0, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 00f4, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 00f8, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 00fc, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0100, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0104, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0108, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 010c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0110, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0114, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0118, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 011c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0120, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0124, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0128, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 012c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0130, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0134, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0138, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 013c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0140, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0144, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0148, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 014c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0150, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0154, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0158, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 015c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0160, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0164, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0168, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 016c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0170, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0174, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0178, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 017c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0180, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 0184, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+result= 00000000
+=== FETCH ===
+PC = 0188, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+=== FETCH ===
+PC = 018c, Instruction = xxxxxxxx
+=== DECODE ===
+opcode=0000000, rs1= 0, rs2= 0, rd= 0
+funct3=000, funct7=0000000
+imm32 = 00000000
+=== ALU ===
+ALU_result = 0000000a, branch = 0
+=== WRITEBACK ===
+WriteData = 0000000a, ToReg =  0, wb_sel = 0
+=== DATA MEMORY ===
+Data Memory Address = 000a, Data Memory Write Data = 00000000, Data Memory Read Data = xxxxxxxx
+result= 00000000
+cpu_tb.v:24: $finish called at 1010000 (1ps)

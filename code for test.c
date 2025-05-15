@@ -1,0 +1,18 @@
+int main() {
+    int a = 10;
+    int b = -5;
+    int c = a + b;
+    int d = a - b;
+
+    int result = 0;
+    if (c > d) {
+        result = 1;
+    } else {
+        result = 2;
+    }
+
+    volatile int* output = (int*)0x00001000;
+    *output = result;
+
+    while (1); // infinite loop
+}

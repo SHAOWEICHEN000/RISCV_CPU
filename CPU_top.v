@@ -18,27 +18,32 @@ module top(input clk, input rst // ✅ 改成 reg
     wire [4:0] rs1, rs2, rd;
     wire [2:0] funct3;
     wire [6:0] funct7;
-    wire [31:0] imm_i, imm_s, imm_b, imm_j, imm_u, imm32;
+    wire [11:0] imm_i; 
+    wire [11:0] imm_s;
+    wire [11:0]imm_b;
+    wire [20:0] imm_j;
+    wire [19:0] imm_u;
+    wire [31:0] imm32;
     wire wEn, branch_op;
     wire [1:0] op_A_sel, op_B_sel;
     wire [5:0] ALU_Control;
     wire mem_wEn, wb_sel;
     wire [31:0] instruction;    
-
+    wire [15:0]pc_target;
     // Regfile
     wire [31:0] read_data1;
     wire [31:0] read_data2;
-
+	
     // ALU
     wire [31:0] ALU_result;
     wire branch;
     // Data Memory
     wire [31:0] data_mem_read_data; // Changed name to avoid conflict
     wire [15:0] data_mem_address;
-wire [31:0] data_mem_write_data;
-wire [31:0] write_data;
-wire [31:0] operand1, operand2;
-wire [31:0] regfile_read_data1, regfile_read_data2;
+    wire [31:0] data_mem_write_data;
+    wire [31:0] write_data;
+    wire [31:0] operand1, operand2;
+    wire [31:0] regfile_read_data1, regfile_read_data2;
 
     wire [31:0] read_data;
     //JALR
@@ -175,8 +180,10 @@ wire [31:0] regfile_read_data1, regfile_read_data2;
         $display("ALU_result = %h, branch = %b", ALU_result, branch);
         $display("=== WRITEBACK ===");
         $display("WriteData = %h, ToReg = %d, wb_sel = %b", write_data, rd, wb_sel);
-         $display("=== DATA MEMORY ===");
+        $display("=== DATA MEMORY ===");
         $display("Data Memory Address = %h, Data Memory Write Data = %h, Data Memory Read Data = %h", data_mem_address, data_mem_write_data, data_mem_read_data);
+   
+
     end
 
 
