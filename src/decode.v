@@ -1,5 +1,3 @@
-`ifndef DECODE_V
-`define DECODE_V
 module decode(
 input [15:0]pc,
 input [31:0] instruction,
