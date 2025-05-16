@@ -1,4 +1,3 @@
-`include"data_memory.v"
 module  data_memory_tb;
 reg clk,mem_wEn,rst;
 reg [15:0]address;
@@ -12,7 +11,6 @@ data_memory data_memory(
 .write_data(write_data),
 .read_data(read_data)
 ); 
-
 initial begin
 clk=0;
 forever #5 clk=~clk;
@@ -25,14 +23,11 @@ address=16'h0000;
 #10
 // 寫入
   @(posedge clk);
-  rst=1;
+rst=1;
 mem_wEn = 1;
 address = 16'h006f;
 write_data = 32'h11100011;
-
-
 @(posedge clk);
-
 // 關閉寫入
 mem_wEn = 0;
 @(posedge clk);
