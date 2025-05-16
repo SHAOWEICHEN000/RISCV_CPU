@@ -16,10 +16,11 @@ This project is a Verilog-based implementation of a **5-stage RISC-V RV32I singl
   - `data_memory.v`
   - `instruction_memory.v`
   - `CPU_top.v`
+  - `mux`
 
 ## 🛠️ Build & Simulate
 ## Hex Program
-simple instructions in hex file like if, jump, add, sub
+simple instructions in hex file like if, jump, add, sub and load in instruction memory
 ## simulaion
 gtkwave 
 $display
