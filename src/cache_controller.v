@@ -5,25 +5,24 @@ module cache_control(
     input [31:0]address,
     input wEn,
     input rEn,
-    output [31:0]write_memory,
-    output [31:0]read_memry,
-    output [31:0]update,
+    output reg [31:0]write_memory,
+    output reg [31:0]read_memry,
+    output reg [31:0]update,
     input [31:0]refill
 );
-typedef enum logic [2:0] {
-    S_IDLE,
-    S_CHECK,
-    S_HIT_READ,
-    S_HIT_WRITE,
-    S_FIND_VIC,
-    S_WB,
-    S_ALLOC,
-    S_DONE
-} state_t;
+parameter S_IDLE = 3'b000,
+          S_CHECK = 3'b001,
+          S_HIT_READ = 3'b010,
+          S_HIT_WRITE = 3'b011,
+          S_FIND_VIC = 3'b100,
+          S_WB = 3'b101,
+          S_ALLOC = 3'b110,
+          S_DONE = 3'b111;
 
-state_t state, next_state;
+reg [2:0] state, next_state;
 
-wire hit0,hit1,hit;
+
+wire hit0,hit1,hit_all;
 wire [27:0]tag_memory;
 wire [1:0] set_memory;
 wire [1:0]offset_memory;
@@ -37,6 +36,7 @@ wire [31:0]data_way0;
 wire [31:0]data_way1;
 wire [31:0]data;
 hit hit(
+    .clk(clk),
     .v_way0(v_way0),
     .v_way1(v_way1),
     .tag_way0(tag_way0),
@@ -44,10 +44,11 @@ hit hit(
     .tag_memory(tag_memory),
     .hit0(hit0),
     .hit1(hit1),
-    .hit(hit)
+    .hit_all(hit_all)
 );
 
 address_splitter address_splitter(
+    .clk(clk),
     .address(address),
     .tag_memory(tag_memory),
     .set_memory(set_memory),
@@ -65,6 +66,7 @@ lru lru(
 );
 
 Data_multiplexer Data_multiplexer(
+    .clk(clk),
     .data_way0(data_way0),
     .data_way1(data_way1),
     .hit1(hit1),
@@ -74,9 +76,9 @@ Data_multiplexer Data_multiplexer(
 cache_array cache_array(
     .clk(clk),
     .rst(rst),
-    .wE0(wE0),
-    .wE1(wE1),
+    .write_en(write_en),
     .index(index),
+    .victim_way(victim_way),
     .v_write_in(v_write_in),
     .tag_write_in(tag_write_in),
     .data_write_in(data_write_in),
@@ -98,8 +100,6 @@ reg [31:0] data_write_in;
 reg [27:0] tag_write_in;
 reg v_write_in;
 reg dirty_write_in;
-reg [31:0] write_memory, update;
-reg [31:0] read_memry;
 wire victim_way; // 來自 LRU，用來決定淘汰哪個 way
 wire victim_dirty = (victim_way == 1'b0) ? dirty_way0 : dirty_way1;
 wire [31:0] victim_data = (victim_way == 1'b0) ? data_way0 : data_way1;
@@ -113,7 +113,7 @@ always @(*) begin
             if (rEn || wEn)
                 next_state = S_CHECK;
         S_CHECK:
-            if (hit)
+            if (hit_all)
                 next_state = (rEn ? S_HIT_READ : S_HIT_WRITE);
             else
                 next_state = S_FIND_VIC;

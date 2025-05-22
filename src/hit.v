@@ -1,4 +1,5 @@
 module hit(
+    input clk,
     input v_way0,
     input v_way1,
     input [27:0]tag_way0,
@@ -6,11 +7,11 @@ module hit(
     input [27:0]tag_memory,
     output reg hit0,
     output reg hit1,
-    output reg hit
+    output reg hit_all
 );
     reg jg0;
     reg jg1;
-    always @(*) begin
+    always @(posedge clk) begin
         jg0=0;
         jg1=0;
     	// equal block memory and cache way0
@@ -20,8 +21,8 @@ module hit(
         if(tag_memory== tag_way1) begin
             jg1=1;
         end
-        hit1=v_way0 & jg1;
-        hit0=v_way1 & jg0;
-        hit =hit0 | hit1;
+        hit1=v_way1 & jg1;
+        hit0=v_way0 & jg0;
+        hit_all =hit0 | hit1;
     end
 endmodule

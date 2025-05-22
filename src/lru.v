@@ -1,7 +1,7 @@
 module lru(
     input clk,
     input rst,
-    input [1:0] index,
+    input [1:0]index,
     input update_en,
     input hit0,
     input hit1,
@@ -26,3 +26,4 @@ module lru(
 
     assign victim_way = ~lru_bit[index];  // victim
 endmodule
+
