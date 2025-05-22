@@ -35,31 +35,50 @@ module cache_control_tb;
         $dumpvars(0, cache_control_tb);
     end
 
-    initial begin
-        rst = 1; mem_ready = 0; wEn = 0; rEn = 0;
-        address = 32'h12345678;
-        refill = 32'h89abcdef;
-        #20 rst = 0;
+   initial begin
+    $display("=== Cache Control Test Start ===");
+    clk = 0;
+    rst = 1;
+    wEn = 0; rEn = 0;
+    address = 32'h00000000;
+    refill = 32'hDEADBEEF;
+    #10 rst = 0;
 
-        // 1. 模擬 read miss + refill
-        $display("T=%0t | 模擬 read miss + refill", $time);
-        rEn = 1;
-        #10;
-        rEn = 0; mem_ready = 1; #20; mem_ready = 0;
+    // ---- Write Miss + Refill ----
+    #10 address = 32'h55555555;
+    wEn = 1; rEn = 0;
+    #10 wEn = 0;
 
-        // 2. 模擬 read hit
-        #20 rEn = 1; #20 rEn = 0;
+    // Wait for refill
+    #50 mem_ready = 1;
+    #10 mem_ready = 0;
 
-        // 3. 模擬 write hit
-        #20 wEn = 1; #20 wEn = 0;
+    // ---- Write Hit (same address) ----
+    #20 address = 32'h00000000;
+    wEn = 1;
 
-        // 4. 模擬 write miss + write back
-        address = 32'h9ABCDEF0;
-        refill = 32'hdeadbeef;
-        write_memory=32'h11111111;
-        #20 wEn = 1; #10 wEn = 0; mem_ready = 1; #20 mem_ready = 0;
-        
-        $display("T=%0t | 測試完成", $time);
-        #20 $finish;
-    end
+
+    // ---- Conflict Miss: cause eviction ----
+    #20 address = 32'h00000040; // 同樣 index 的不同 tag，造成 conflict miss
+    wEn = 1;
+    #10 wEn = 0;
+
+    // Wait for write-back of dirty block
+    #50 mem_ready = 1;
+    #10 mem_ready = 0;
+
+    // ---- Read back to verify refill ----
+    #20 address = 32'h55555555; 
+    rEn = 1;
+    #10 rEn = 0;
+    
+    
+    $display("=== Cache Control Test End ===");
+    $finish;
+end
+always @(posedge clk) begin
+    $display("Time=%0t, State=%0d, Addr=%h, hit_all=%b, victim=%b, dirty=%b, Read=%h", 
+    $time, uut.next_state, address, uut.hit_all, uut.victim_way, uut.victim_dirty, uut.read_memry);
+    
+end
 endmodule
