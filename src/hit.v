@@ -21,8 +21,11 @@ module hit(
         if(tag_memory== tag_way1) begin
             jg1=1;
         end
-        hit1=v_way1 & jg1;
-        hit0=v_way0 & jg0;
-        hit_all =hit0 | hit1;
+        #10 hit1=v_way1 & jg1;
+        #10 hit0=v_way0 & jg0;
+        #10 hit_all =hit0 | hit1;
+        $display("[hit.v] tag_mem=%h, tag0=%h, tag1=%h, v0=%b, v1=%b, hit0=%b, hit1=%b, hit_all=%b",
+        tag_memory, tag_way0, tag_way1, v_way0, v_way1, hit0, hit1, hit_all);
+
     end
 endmodule

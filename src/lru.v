@@ -11,7 +11,9 @@ module lru(
 
     // reset and update
     always @(posedge clk) begin
+    
         if (rst) begin
+        
             lru_bit[0] <= 0;
             lru_bit[1] <= 0;
             lru_bit[2] <= 0;

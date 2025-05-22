@@ -23,24 +23,44 @@ module cache_array(
     reg dirty_array[0:3][0:1];
 
     // write memory using victim_way
-    always @(posedge clk) begin
-        if (write_en) begin
-            valid_array[index][victim_way] <= v_write_in;
-            tag_array[index][victim_way]   <= tag_write_in;
-            data_array[index][victim_way]  <= data_write_in;
-            dirty_array[index][victim_way] <= dirty_write_in;
-        end
+    always @(posedge clk or posedge rst) begin
+    if (rst) begin
+        
+        valid_array[0][0] <= 0; valid_array[0][1] <= 0;
+        valid_array[1][0] <= 0; valid_array[1][1] <= 0;
+        valid_array[2][0] <= 0; valid_array[2][1] <= 0;
+        valid_array[3][0] <= 0; valid_array[3][1] <= 0;
 
-        if (rst) begin
-            valid_array[0][0] <= 0; valid_array[0][1] <= 0;
-            valid_array[1][0] <= 0; valid_array[1][1] <= 0;
-            valid_array[2][0] <= 0; valid_array[2][1] <= 0;
-            valid_array[3][0] <= 0; valid_array[3][1] <= 0;
+        dirty_array[0][0] <= 0; dirty_array[0][1] <= 0;
+        dirty_array[1][0] <= 0; dirty_array[1][1] <= 0;
+        dirty_array[2][0] <= 0; dirty_array[2][1] <= 0;
+        dirty_array[3][0] <= 0; dirty_array[3][1] <= 0;
+        
+        data_array[0][0] <= 0; data_array[0][1] <= 0;
+        data_array[1][0] <= 0; data_array[1][1] <= 0;
+        data_array[2][0] <= 0; data_array[2][1] <= 0;
+        data_array[3][0] <= 0; data_array[3][1] <= 0;
+        
+        tag_array[0][0] <= 0; tag_array[0][1] <= 0;
+        tag_array[1][0] <= 0; tag_array[1][1] <= 0;
+        tag_array[2][0] <= 0; tag_array[2][1] <= 0;
+        tag_array[3][0] <= 0; tag_array[3][1] <= 0;
+        
+    end else if (write_en) begin
+        if (victim_way == 0) begin
+            valid_array[index][0] <= v_write_in;
+            dirty_array[index][0] <= dirty_write_in;
+            tag_array[index][0] <= tag_write_in;
+            data_array[index][0] <= data_write_in;
+            $display("[WRITE CACHE] Set dirty0 = %b", dirty_write_in);
+        end else begin
+            valid_array[index][1] <= v_write_in;
+            dirty_array[index][1] <= dirty_write_in;
+            tag_array[index][1] <= tag_write_in;
+            data_array[index][1] <= data_write_in;
+            $display("[WRITE CACHE] Set dirty1 = %b", dirty_write_in);
         end
     end
-
-    // read all data from current index
-    always @(*) begin
         v_way0     = valid_array[index][0];
         v_way1     = valid_array[index][1];
         tag_way0   = tag_array[index][0];
@@ -49,6 +69,6 @@ module cache_array(
         data_way1  = data_array[index][1];
         dirty_way0 = dirty_array[index][0];
         dirty_way1 = dirty_array[index][1];
-    end
-
+        $display("[WRITE CACHE] read dirty_way0 = %b", dirty_way0);
+end
 endmodule
