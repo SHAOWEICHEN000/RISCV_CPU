@@ -44,6 +44,16 @@ bash
 複製
 編輯
 # Compile
+iiverilog -o cache_control_tb.out \
+  cache_control_tb.v \
+  ../cache/cache_controller.v \
+  ../cache/cache_array.v \
+  ../cache/address_splitter.v \
+  ../cache/Data_multiplexer.v \
+  ../cache/lru.v \
+  ../cache/hit.v
+
+vvp cache_control_tb.out
 iverilog -o cpu_tb CPU_top.v regfile.v alu.v decode.v fetch.v data_memory.v instruction_memory.v imm_gen.v testbench.v
 
 # Simulate
