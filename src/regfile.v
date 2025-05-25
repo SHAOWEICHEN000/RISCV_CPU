@@ -19,15 +19,15 @@ integer i;
  always @(posedge clk) begin
  	
  if (rst) begin
-    x[0] <= 32'b0; // x0 永遠為 0（RISC-V 規範）
+    x[0] = 32'b0; // x0 永遠為 0（RISC-V 規範）
     for(i=0;i<32;i++)begin
-    x[i]<=32'b0;
+    x[i]=32'b0;
     end
   end else if (wEn && rd != 5'd0) begin
-   x[rd] <= write_data;
+   x[rd] = write_data;
     
   end
-$display("result= %h", x[12]);
+
 
  end
 endmodule

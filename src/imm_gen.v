@@ -9,11 +9,12 @@ module imm_gen(
 
   wire [6:0] opcode = instruction[6:0];
 
-  always @(*) begin
+  always @(posedge clk) begin
     case (opcode)
       // I-type (e.g. addi, lw, jalr)
-      7'b0010011, // addi
-      7'b0000011, // lw
+      7'b0010011:imm32 = {{20{instruction[31]}}, instruction[31:20]};// addi
+      
+      7'b0000011:imm32 = {{20{instruction[31]}}, instruction[31:20]};// lw
       7'b1100111: // jalr
         imm32 = {{20{instruction[31]}}, instruction[31:20]};
 
@@ -22,8 +23,15 @@ module imm_gen(
         imm32 = {{20{instruction[31]}}, instruction[31:25], instruction[11:7]};
 
       // B-type (e.g. beq, bne, blt, bge)
-      7'b1100011: 
-        imm32 = {{19{instruction[31]}}, instruction[31], instruction[7], instruction[30:25], instruction[11:8], 1'b0};
+      7'b1100011: begin // B-type
+           imm32 = {{20{instruction[31]}},         // sign extend from imm[12]
+           instruction[7],                // imm[11]
+           instruction[30:25],            // imm[10:5]
+           instruction[11:8],             // imm[4:1]
+           1'b0};                         // LSB is always 0 (word-aligned)
+      end
+
+
 
       // U-type (e.g. lui, auipc)
       7'b0110111, // lui

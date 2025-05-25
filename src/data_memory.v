@@ -1,32 +1,30 @@
 `ifndef DATA_MEMORY_V
 `define DATA_MEMORY_V
-
-module data_memory(
-  input clk,
-  input mem_wEn,
-  input rst,
-  input [15:0] address,
-  input [31:0] write_data,
-  output reg[31:0] read_data
+module data_memory (
+    input  wire        clk,
+    input  wire        rst,
+    input  wire        mem_wEn,        // 1 = store, 0 = load
+    input  wire [15:0]  address,        // 5-bit → 32 words
+    input  wire [31:0] write_data,
+    output reg  [31:0] read_data
 );
+    localparam RAM_DEPTH = 16;         // 32 × 4B = 128 B
+    reg [31:0] memory [0:RAM_DEPTH-1];
+    integer i;
 
-  localparam RAM_DEPTH = 1 << 16;
-  reg [31:0] memory[0:RAM_DEPTH - 1];
-
-  always @(posedge clk) begin
-  if(rst) begin
-    if (mem_wEn) begin
- 
-      memory[address[15:2]] <= write_data; // word-aligned
-      #1 $display("address[15:2]  = %h ",address[15:2] );
-        @(posedge clk);
-      #1 $display("memory[address[15:2]]  = %h (expect 11111111)",memory[address[15:2]] );
+    always @(posedge clk) begin
+        // ---------- Reset：清空記憶體 ----------
+        if (rst) begin
+            for (i = 0; i < RAM_DEPTH; i = i + 1)
+                memory[i] = 32'b0;
+            read_data = 32'b0;
+        end
+        // ---------- 正常運作 ----------
+        else begin
+            if (mem_wEn)                      // Store
+                memory[address] = write_data;
+            read_data = memory[address];     // Load (下一拍取出)
+        end
     end
-    read_data <= memory[address[15:2]];
-
-    end
-  end
-
 endmodule
-
 `endif
